@@ -34,10 +34,12 @@ type LocalSystem struct {
 
 // NewLocalSystem returns an initialized LocalSystem object.
 func NewLocalSystem(c *config.Config) (*LocalSystem, error) {
+	fmt.Println("checking settings")
 	if err := c.CheckSettings(); err != nil {
 		return nil, err
 	}
 
+	fmt.Println("getting pool")
 	pool := resolvers.SetupResolverPool(
 		c.Resolvers,
 		c.ScoreResolvers,
@@ -45,26 +47,31 @@ func NewLocalSystem(c *config.Config) (*LocalSystem, error) {
 		c.Log,
 	)
 	if pool == nil {
+		fmt.Println("pool is nil")
 		return nil, errors.New("The system was unable to build the pool of resolvers")
 	}
 
+	fmt.Println("getting sys")
 	sys := &LocalSystem{
 		cfg:  c,
 		pool: pool,
 		done: make(chan struct{}, 2),
 	}
 
+	fmt.Println("setting up graphdb")
 	// Setup the correct graph database handler
 	if err := sys.setupGraphDBs(); err != nil {
 		sys.Shutdown()
 		return nil, err
 	}
 
+	fmt.Println("initcoreservices")
 	if err := sys.initCoreServices(); err != nil {
 		sys.Shutdown()
 		return nil, err
 	}
 
+	fmt.Println("getting all sources.")
 	// Add all the data sources that successfully start to the list
 	for _, src := range GetAllSources(sys) {
 		sys.AddAndStart(src)
