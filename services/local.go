@@ -167,21 +167,27 @@ func (l *LocalSystem) GetAllSourceNames() []string {
 // Select the graph that will store the System findings.
 func (l *LocalSystem) setupGraphDBs() error {
 	if l.Config().GremlinURL != "" {
+		fmt.Println("l.Config().GremlinURL != nil")
 		/*gremlin := graph.NewGremlin(l.Config().GremlinURL,
 			l.Config().GremlinUser, l.Config().GremlinPass, l.Config().Log)
 		l.graphs = append(l.graphs, gremlin)*/
 	}
 
+	fmt.Println("g := graph.NewGraph ...")
 	g := graph.NewGraph(db.NewCayleyGraph(l.Config().Dir))
 	if g == nil {
 		return errors.New("Failed to create the graph")
 	}
+
+	fmt.Println("appending to l.graphs")
 	l.graphs = append(l.graphs, g)
 	/*
 		if l.Config().DataOptsWriter != nil {
 			l.graphs = append(l.graphs,
 				graph.NewDataOptsHandler(l.Config().DataOptsWriter))
 		}*/
+
+	fmt.Println("returning nil")
 	return nil
 }
 
