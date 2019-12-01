@@ -6,7 +6,7 @@ package graph
 import (
 	"strconv"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 // InsertAS adds/updates an autonomous system in the graph.

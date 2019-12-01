@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/OWASP/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 const (

@@ -14,10 +14,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/eventbus"
-	amasshttp "github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/eventbus"
+	amasshttp "github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 // DNSDumpster is the Service that handles access to the DNSDumpster data source.

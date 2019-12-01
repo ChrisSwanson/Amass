@@ -9,13 +9,13 @@ import (
 	"sync"
 	"time"
 
-	alts "github.com/OWASP/Amass/v3/alterations"
-	"github.com/OWASP/Amass/v3/config"
-	eb "github.com/OWASP/Amass/v3/eventbus"
-	"github.com/OWASP/Amass/v3/queue"
-	"github.com/OWASP/Amass/v3/requests"
-	"github.com/OWASP/Amass/v3/services"
-	"github.com/OWASP/Amass/v3/stringset"
+	alts "github.com/chrisswanson/Amass/v3/alterations"
+	"github.com/chrisswanson/Amass/v3/config"
+	eb "github.com/chrisswanson/Amass/v3/eventbus"
+	"github.com/chrisswanson/Amass/v3/queue"
+	"github.com/chrisswanson/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/services"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 // Filters contains the set of string filters required during an enumeration.

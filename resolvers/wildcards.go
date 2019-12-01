@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/v3/requests"
-	"github.com/OWASP/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 // Constants related to DNS labels.

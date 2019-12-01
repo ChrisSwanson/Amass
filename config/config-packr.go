@@ -5,4 +5,4 @@
 // and any other packr generated files.
 package config
 
-import _ "github.com/OWASP/Amass/v3/config/packrd"
+import _ "github.com/chrisswanson/Amass/v3/config/packrd"

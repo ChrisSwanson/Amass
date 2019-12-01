@@ -6,7 +6,7 @@ package graph
 import (
 	"sync"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 // Graph implements the Amass network infrastructure data model.

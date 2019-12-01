@@ -6,7 +6,7 @@ package graph
 import (
 	"errors"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 	"golang.org/x/net/publicsuffix"
 )
 

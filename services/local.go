@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/graph"
-	"github.com/OWASP/Amass/v3/graph/db"
-	"github.com/OWASP/Amass/v3/resolvers"
-	"github.com/OWASP/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/graph"
+	"github.com/chrisswanson/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/resolvers"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 // LocalSystem implements a System to be executed within a single process.

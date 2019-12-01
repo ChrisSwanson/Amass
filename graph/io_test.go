@@ -3,7 +3,7 @@ package graph
 import (
 	"testing"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 func TestIO(t *testing.T) {

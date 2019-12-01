@@ -10,10 +10,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/eventbus"
-	"github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/eventbus"
+	"github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 // Bing is the Service that handles access to the Bing data source.

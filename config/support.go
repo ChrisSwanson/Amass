@@ -15,9 +15,9 @@ import (
 	"strings"
 	"sync"
 
-	amasshttp "github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
-	"github.com/OWASP/Amass/v3/stringset"
+	amasshttp "github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/stringset"
 	"github.com/gobuffalo/packr/v2"
 )
 

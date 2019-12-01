@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OWASP/Amass/v3/queue"
-	"github.com/OWASP/Amass/v3/requests"
-	"github.com/OWASP/Amass/v3/semaphore"
-	"github.com/OWASP/Amass/v3/viz"
+	"github.com/chrisswanson/Amass/v3/queue"
+	"github.com/chrisswanson/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/semaphore"
+	"github.com/chrisswanson/Amass/v3/viz"
 	"github.com/qasaur/gremgo"
 )
 

@@ -6,7 +6,7 @@ package services
 import (
 	"testing"
 
-	"github.com/OWASP/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/net/http"
 )
 
 func TestPTRArchive(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/eventbus"
-	"github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/eventbus"
+	"github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 // IPv4Info is the Service that handles access to the IPv4Info data source.

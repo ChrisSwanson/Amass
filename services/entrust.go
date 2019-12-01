@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/eventbus"
-	"github.com/OWASP/Amass/v3/net/dns"
-	"github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/eventbus"
+	"github.com/chrisswanson/Amass/v3/net/dns"
+	"github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 // Entrust is the Service that handles access to the Entrust data source.

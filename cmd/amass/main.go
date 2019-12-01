@@ -10,17 +10,17 @@ import (
 	"os"
 	"path"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/format"
-	"github.com/OWASP/Amass/v3/services"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/format"
+	"github.com/chrisswanson/Amass/v3/services"
 	"github.com/fatih/color"
 	//"github.com/pkg/profile"
 )
 
 const (
 	mainUsageMsg         = "intel|enum|viz|track|db [options]"
-	exampleConfigFileURL = "https://github.com/OWASP/Amass/blob/master/examples/config.ini"
-	userGuideURL         = "https://github.com/OWASP/Amass/blob/master/doc/user_guide.md"
+	exampleConfigFileURL = "https://github.com/chrisswanson/Amass/blob/master/examples/config.ini"
+	userGuideURL         = "https://github.com/chrisswanson/Amass/blob/master/doc/user_guide.md"
 )
 
 var (

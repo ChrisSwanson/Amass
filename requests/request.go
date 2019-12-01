@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/OWASP/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 // Request tag types.

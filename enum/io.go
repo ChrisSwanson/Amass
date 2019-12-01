@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/requests"
 	"github.com/miekg/dns"
 )
 

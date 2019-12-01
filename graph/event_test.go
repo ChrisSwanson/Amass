@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 func TestEvent(t *testing.T) {

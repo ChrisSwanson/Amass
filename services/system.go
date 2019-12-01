@@ -4,9 +4,9 @@
 package services
 
 import (
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/graph"
-	"github.com/OWASP/Amass/v3/resolvers"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/graph"
+	"github.com/chrisswanson/Amass/v3/resolvers"
 )
 
 // System is the object type for managing services that perform various reconnaissance activities.

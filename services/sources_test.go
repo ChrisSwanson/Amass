@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	eb "github.com/OWASP/Amass/v3/eventbus"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/config"
+	eb "github.com/chrisswanson/Amass/v3/eventbus"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 var (

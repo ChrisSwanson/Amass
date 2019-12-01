@@ -4,7 +4,7 @@
 package graph
 
 import (
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 // InsertAddress creates an IP address in the graph and associates it with a source and event.

@@ -13,12 +13,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/OWASP/Amass/v3/format"
-	"github.com/OWASP/Amass/v3/net/dns"
-	"github.com/OWASP/Amass/v3/net/http"
-	"github.com/OWASP/Amass/v3/semaphore"
-	"github.com/OWASP/Amass/v3/stringset"
-	"github.com/OWASP/Amass/v3/wordlist"
+	"github.com/chrisswanson/Amass/v3/format"
+	"github.com/chrisswanson/Amass/v3/net/dns"
+	"github.com/chrisswanson/Amass/v3/net/http"
+	"github.com/chrisswanson/Amass/v3/semaphore"
+	"github.com/chrisswanson/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/wordlist"
 	"github.com/go-ini/ini"
 	"github.com/google/uuid"
 )

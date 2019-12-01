@@ -8,8 +8,8 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/OWASP/Amass/v3/graph/db"
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/requests"
 	"golang.org/x/net/publicsuffix"
 )
 

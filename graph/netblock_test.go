@@ -5,7 +5,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 func TestNetblock(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/OWASP/Amass/v3/requests"
+	"github.com/chrisswanson/Amass/v3/requests"
 )
 
 func TestResolverPoolWildcardDetection(t *testing.T) {

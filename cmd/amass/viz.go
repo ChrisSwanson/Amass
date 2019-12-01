@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/OWASP/Amass/v3/config"
-	"github.com/OWASP/Amass/v3/graph"
-	"github.com/OWASP/Amass/v3/stringset"
-	"github.com/OWASP/Amass/v3/viz"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/graph"
+	"github.com/chrisswanson/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/viz"
 	"github.com/fatih/color"
 )
 

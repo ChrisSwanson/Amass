@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OWASP/Amass/v3/net/dns"
-	"github.com/OWASP/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/net/dns"
+	"github.com/chrisswanson/Amass/v3/stringset"
 	"github.com/caffix/cloudflare-roundtripper/cfrt"
 )
 

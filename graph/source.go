@@ -4,7 +4,7 @@
 package graph
 
 import (
-	"github.com/OWASP/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/graph/db"
 )
 
 // InsertSource creates a data source node in the graph.

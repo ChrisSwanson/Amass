@@ -4,9 +4,9 @@
 package graph
 
 import (
-	"github.com/OWASP/Amass/v3/graph/db"
-	"github.com/OWASP/Amass/v3/stringset"
-	"github.com/OWASP/Amass/v3/viz"
+	"github.com/chrisswanson/Amass/v3/graph/db"
+	"github.com/chrisswanson/Amass/v3/stringset"
+	"github.com/chrisswanson/Amass/v3/viz"
 )
 
 // VizData returns the current state of the Graph as viz package Nodes and Edges.
