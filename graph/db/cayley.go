@@ -33,7 +33,7 @@ func NewCayleyGraph(path string) *CayleyGraph {
 	path = config.OutputDirectory(path)
 	fmt.Printf("path after: %#v\n", path)
 	if path == "" {
-		fmt.Prtinln("NewCayleyGraph returning.")
+		fmt.Println("NewCayleyGraph returning.")
 		return nil
 	}
 	fmt.Println("path not nil")
