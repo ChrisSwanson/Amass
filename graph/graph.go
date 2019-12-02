@@ -4,9 +4,11 @@
 package graph
 
 import (
+	"fmt"
 	"sync"
 
 	"github.com/chrisswanson/Amass/v3/graph/db"
+	"github.com/davecgh/go-spew/spew"
 )
 
 // Graph implements the Amass network infrastructure data model.
@@ -22,7 +24,10 @@ type Graph struct {
 
 // NewGraph accepts a graph database that stores the Graph created and maintained by the data model.
 func NewGraph(database db.GraphDatabase) *Graph {
+	fmt.Println("NewGraph(database)")
+	spew.Dump(database)
 	if database == nil {
+		fmt.Println("database nil.")
 		return nil
 	}
 

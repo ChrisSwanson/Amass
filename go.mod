@@ -7,6 +7,7 @@ require (
 	github.com/caffix/cloudflare-roundtripper v0.0.0-20181218223503-4c29d231c9cb
 	github.com/cayleygraph/cayley v0.7.7
 	github.com/cayleygraph/quad v1.1.0
+	github.com/davecgh/go-spew v1.1.1
 	github.com/dghubble/go-twitter v0.0.0-20190719072343-39e5462e111f
 	github.com/fatih/color v1.7.0
 	github.com/geziyor/geziyor v0.0.0-20190913113429-9b8a3837bd4a

@@ -14,6 +14,7 @@ import (
 	"github.com/chrisswanson/Amass/v3/graph/db"
 	"github.com/chrisswanson/Amass/v3/resolvers"
 	"github.com/chrisswanson/Amass/v3/stringset"
+	"github.com/davecgh/go-spew/spew"
 )
 
 // LocalSystem implements a System to be executed within a single process.
@@ -173,8 +174,12 @@ func (l *LocalSystem) setupGraphDBs() error {
 		l.graphs = append(l.graphs, gremlin)*/
 	}
 
-	fmt.Println("g := graph.NewGraph ...")
+	// This appears to be where my run is hanging...
+	fmt.Println("g := graph.NewGraph ...\n spew.Dump(l)")
+	spew.Dump(l)
 	g := graph.NewGraph(db.NewCayleyGraph(l.Config().Dir))
+	fmt.Println("spew.Dump(g)")
+	spew.Dump(g)
 	if g == nil {
 		return errors.New("Failed to create the graph")
 	}
