@@ -10,12 +10,12 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/chrisswanson/Amass/v3/config"
-	"github.com/chrisswanson/Amass/v3/stringset"
 	"github.com/cayleygraph/cayley"
 	"github.com/cayleygraph/cayley/graph"
 	_ "github.com/cayleygraph/cayley/graph/kv/bolt" // Used by the cayley package
 	"github.com/cayleygraph/quad"
+	"github.com/chrisswanson/Amass/v3/config"
+	"github.com/chrisswanson/Amass/v3/stringset"
 )
 
 // CayleyGraph is the object for managing a network infrastructure link graph.
@@ -29,10 +29,14 @@ type CayleyGraph struct {
 func NewCayleyGraph(path string) *CayleyGraph {
 	var err error
 
+	fmt.Printf("path before: %#v\n", path)
 	path = config.OutputDirectory(path)
+	fmt.Printf("path after: %#v\n", path)
 	if path == "" {
+		fmt.Prtinln("NewCayleyGraph returning.")
 		return nil
 	}
+	fmt.Println("path not nil")
 
 	// If the directory does not yet exist, create it
 	if err = os.MkdirAll(path, 0755); err != nil {
