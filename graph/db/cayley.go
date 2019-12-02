@@ -54,6 +54,9 @@ func NewCayleyGraph(path string) *CayleyGraph {
 
 	fmt.Println("cayley.NewGraph")
 	store, err := cayley.NewGraph("bolt", path, nil)
+	fmt.Printf("err: %#v\n", err)
+	fmt.Println("store ...")
+	spew.Dump(store)
 	if err != nil {
 		return nil
 	}
