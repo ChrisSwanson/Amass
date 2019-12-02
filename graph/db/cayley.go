@@ -16,6 +16,7 @@ import (
 	"github.com/cayleygraph/quad"
 	"github.com/chrisswanson/Amass/v3/config"
 	"github.com/chrisswanson/Amass/v3/stringset"
+	"github.com/davecgh/go-spew/spew"
 )
 
 // CayleyGraph is the object for managing a network infrastructure link graph.
@@ -38,21 +39,28 @@ func NewCayleyGraph(path string) *CayleyGraph {
 	}
 	fmt.Println("path not nil")
 
+	fmt.Println("os.MkdirAll")
 	// If the directory does not yet exist, create it
 	if err = os.MkdirAll(path, 0755); err != nil {
 		return nil
 	}
 
+	fmt.Println("isNewFile")
 	if isNewFile(filepath.Join(path, "indexes.bolt")) {
 		if err = graph.InitQuadStore("bolt", path, nil); err != nil {
 			return nil
 		}
 	}
 
+	fmt.Println("cayley.NewGraph")
 	store, err := cayley.NewGraph("bolt", path, nil)
 	if err != nil {
 		return nil
 	}
+
+	fmt.Println("returning Graph")
+	spew.Dump(store)
+	spew.Dump(path)
 	return &CayleyGraph{
 		store: store,
 		path:  path,
