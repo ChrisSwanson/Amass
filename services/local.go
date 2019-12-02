@@ -63,6 +63,7 @@ func NewLocalSystem(c *config.Config) (*LocalSystem, error) {
 	fmt.Println("setting up graphdb")
 	// Setup the correct graph database handler
 	if err := sys.setupGraphDBs(); err != nil {
+		fmt.Println("error setting up graphs, suttingdown and returning.")
 		sys.Shutdown()
 		return nil, err
 	}
