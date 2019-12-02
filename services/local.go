@@ -175,9 +175,15 @@ func (l *LocalSystem) setupGraphDBs() error {
 	}
 
 	// This appears to be where my run is hanging...
-	fmt.Println("g := graph.NewGraph ...\n spew.Dump(l)")
-	spew.Dump(l)
-	g := graph.NewGraph(db.NewCayleyGraph(l.Config().Dir))
+	fmt.Println("(l.Config().Dir))")
+	fmt.Printf("%s", l.Config().Dir)
+
+	database := db.NewCayleyGraph(l.Config().Dir)
+	fmt.Println("(database)")
+	spew.Dump(database)
+
+	fmt.Println("g := graph.NewGraph ... ")
+	g := graph.NewGraph(database)
 	fmt.Println("spew.Dump(g)")
 	spew.Dump(g)
 	if g == nil {
